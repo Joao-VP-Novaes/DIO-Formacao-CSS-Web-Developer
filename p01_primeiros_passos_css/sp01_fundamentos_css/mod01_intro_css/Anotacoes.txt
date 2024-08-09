@@ -1,0 +1,54 @@
+CSS (Cascading Style Sheets) é uma linguagem usada para descrever a apresentação visual de documentos
+escritos em HTML ou XML. Enquanto o HTML fornece a estrutura e o conteúdo de uma página web, o CSS é
+responsável pela aparência e layout.
+
+Principais funções do CSS:
+
+    1. Estilo Visual: Define cores, fontes, espaçamentos, tamanhos e outros aspectos visuais dos 
+       elementos de uma página.
+
+    2. Layout e Posição: Controla como os elementos são organizados e dispostos na página, 
+       incluindo posicionamento, alinhamento, e dimensionamento.
+
+    3. Responsividade: Permite que a aparência de uma página se ajuste a diferentes tamanhos de tela, 
+       como em dispositivos móveis, tablets e desktops.
+
+    4. Animações e Efeitos: Adiciona transições, animações, e outros efeitos visuais que melhoram a 
+       experiência do usuário.
+
+    5. Separação de Conteúdo e Apresentação: Mantém o conteúdo (HTML) separado do estilo (CSS), 
+       facilitando a manutenção e o design de páginas web.
+
+O CSS é uma linguagem de estilos. Não de programação, nem de marcação.
+
+Em CSS (Cascading Style Sheets), propriedades e valores são componentes essenciais que juntos definem
+como os elementos HTML serão exibidos visualmente na página web.
+
+    Propriedades em CSS
+
+        * As propriedades são os aspectos específicos do estilo que você deseja alterar ou definir
+          para um elemento HTML.
+
+        * Cada propriedade controla um aspecto particular do estilo, como cor, tamanho, espaçamento,
+          fonte, etc.
+    
+    Valores em CSS
+
+        * Os valores são as especificações que você atribui às propriedades para determinar como elas
+          serão aplicadas.
+
+        * Cada propriedade aceita um ou mais tipos de valores, dependendo de sua função.
+
+Formas de declarar CSS
+
+    * CSS inline: Adicionamos o código CSS utilizando o atributo style dentro das tags HTML, elemento
+      por elemento.
+
+    * CSS interno: Código CSS é adicionado dentro da tag <head> da página HTML. Dentro da tag <head>
+      adicionamos outra tag, a <style>, e colocamos as regras CSS nessa área.
+
+    * CSS externo: É criado um arquivo com a extensão .css com todas as regras css que queremos 
+      aplicar e esse arquivo é referenciado no HTML da página através da tag <link>. Uma desvantagem
+      da utilização do CSS externo é que a página HTML pode ser carregada antes do arquivo .css, 
+      resultando em um atraso na exibição da estilização.
+
