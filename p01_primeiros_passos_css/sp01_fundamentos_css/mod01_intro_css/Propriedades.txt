@@ -1,10 +1,10 @@
-background: em CSS é uma abreviação que permite definir vários aspectos do plano de fundo de um
+* background: em CSS é uma abreviação que permite definir vários aspectos do plano de fundo de um
 elemento em uma única linha. Ela pode incluir cor de fundo, imagem de fundo, posição, repetição,
 tamanho, e mais.
 
     - "representação de uma cor": Define a cor de fundo do elemento ao qual está associada.
 
-color: Em CSS define a cor do texto dentro de um elemento. Essa cor pode ser especificada usando
+* color: Em CSS define a cor do texto dentro de um elemento. Essa cor pode ser especificada usando
 nomes de cores, códigos hexadecimais, valores RGB, valores RGBA, valores HSL ou valores HSLA.
 
     - "representação de uma cor": Define a cor do texto do elemento ao qual está associada.

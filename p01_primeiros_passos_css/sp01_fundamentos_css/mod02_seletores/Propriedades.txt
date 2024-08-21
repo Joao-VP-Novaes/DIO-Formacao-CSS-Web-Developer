@@ -1,0 +1,28 @@
+*text-transform: É usada para controlar a capitalização do texto em um elemento. Ela permite que você
+transforme o texto para maiúsculas, minúsculas ou capitalize a primeira letra de cada palavra.
+
+    - none: Não faz nenhuma transformação no texto (padrão).
+    - capitalize: Transforma a primeira letra de cada palavra em maiúscula.
+    - uppercase: Transforma todo o texto em maiúsculas.
+    - lowercase: Transforma todo o texto em minúsculas.
+    - inherit: Herda o valor da propriedade text-transform do elemento pai.
+
+*font-weight: É usada para definir a espessura da fonte de um texto. Ela controla o quão "negrito" ou
+"leve" o texto aparece.
+
+    - normal: Define o peso padrão da fonte (geralmente 400).
+    - bold: Define a fonte como negrito (geralmente 700).
+    - bolder: Define a fonte com peso mais espesso que o elemento pai.
+    - lighter: Define a fonte com peso mais leve que o elemento pai.
+    - Valores numéricos (100 a 900): Permite especificar o peso da fonte com mais precisão. 
+      Valores comuns incluem:
+
+        + 100: Ultra leve
+        + 200
+        + 300: Leve
+        + 400: Normal (padrão)
+        + 500
+        + 600
+        + 700: Negrito
+        + 800
+        + 900: Ultra negrito

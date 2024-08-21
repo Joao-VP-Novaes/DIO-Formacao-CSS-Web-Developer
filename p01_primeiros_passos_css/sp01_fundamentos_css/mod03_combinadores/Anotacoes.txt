@@ -1,0 +1,25 @@
+É possível definir um bloco de propriedades CSS para um grupo de seletores, separando-os com vírgulas. 
+
+    * Exemplo: h1, p, div { color: red; } aplica a cor vermelha a todos os elementos <h1>, <p>
+      e <div> da página.
+
+    * Exemplo: .minha-classe, h2 { color: red; } aplica a cor vermelha a todos os elementos <h2> e a
+      qualquer elemento que possua a classe CSS 'minha-classe' atribuída.
+
+    * Exemplo: section, #texto { color: red; } aplica a cor vermelha a todos os elementos <section> e
+      ao elemento que possua o ID 'texto' atribuído.
+
+É possível definir um bloco de propriedades CSS para um elemento de uma tag específica que possua uma
+classe específica associada.
+
+    * Exemplo: p.minha-classe { color: blue; } aplica a cor azul a todos os elementos <p> que possuam 
+      a classe 'minha-classe'.
+
+É possível definir um bloco de propriedades CSS para elementos que possuam múltiplas classes CSS.
+
+    * Exemplo: .minha-classe.outraClasse { color: blue; } aplica a cor azul a todos os elementos que
+      possuam simultaneamente as classes 'minha-classe' e 'outraClasse'.
+
+
+
+

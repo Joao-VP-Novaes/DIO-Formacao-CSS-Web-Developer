@@ -1,0 +1,85 @@
+Seletores em CSS são padrões usados para selecionar e aplicar estilos a elementos específicos em um
+documento HTML. Eles permitem que você defina quais partes do seu código HTML serão afetadas por 
+determinadas regras de estilo. Há vários tipos de seletores, cada um com seu propósito e nível de 
+especificidade.
+
+    1. Seletor de Elemento (Tag):
+
+        * Seleciona todos os elementos de um tipo específico.
+        * Exemplo: p { color: blue; } vai aplicar a cor azul a todos os parágrafos (<p>).
+       
+    2. Seletor de Classe:
+
+        * Seleciona elementos com uma classe específica. Para isso, é necessário adicionar um ponto 
+          (.) antes do nome da classe.
+        * Exemplo: .minha-classe { font-size: 20px; } aplica o tamanho da fonte de 20 pixels a todos
+          os elementos com a classe 'minha-classe'.
+    
+    3. Seletor de ID:
+
+        * Seleciona um único elemento com um ID específico. O ID é precedido pelo símbolo #.
+        * Exemplo: #meu-id { margin: 10px; } aplica uma margem de 10 pixels ao elemento com o ID 
+          'meu-id'.
+
+    3. Seletor Universal:
+
+        * Seleciona todos os elementos em um documento HTML.
+        * Exemplo: * { margin: 0; padding: 0; } remove a margem e o padding de todos os elementos.
+    
+    4. Seletor de Atributo:
+
+        * Seleciona elementos com um atributo específico ou com um valor de atributo específico.
+        * Exemplo: input[type="text"] { border: 1px solid black; } aplica uma borda a todos os campos 
+          de entrada (<input>) do tipo texto.
+        * Exemplo: [title] { border: 1px solid black; } aplica uma borda a todas as tags que possuem
+          o atributo title, independentemente do valor desse atributo.
+        * Exemplo: [title~="Guararapes"] { border: 1px solid black; } aplica uma borda a todas as 
+          tags que possuem a palavra "Guararapes" no atributo title, mesmo que haja outras palavras
+          no atributo. "Guararapes1" não seria incluso nesse seletor.
+        * Exemplo: [title|="Guararapes"] { border: 1px solid black; } aplica uma borda a todos os
+          elementos HTML cujo atributo title começa necessariamente com "Guararapes" seguido 
+          opcionalmente por um hífen (-) e mais texto.
+        * Exemplo: a[href^="http://"] { border: 1px solid black; } aplica uma borda a todas as
+          tags <a> cujo atributo href começa com o valor especificado, que neste caso é
+          "http://".
+        * Exemplo: [href$=".com"] { border: 1px solid black; } aplica uma borda a todos os
+          elementos HTML cujo atributo href termina com o valor especificado, que neste caso é
+          ".com".
+        * Exemplo: [href*="www"] { border: 1px solid black; } aplica uma borda a todos os elementos
+          HTML cujo atributo href contém em algum lugar a string "www".
+
+    5. Seletores Combinadores:
+
+        * Seletor Descendente: Seleciona elementos que estão dentro de outro elemento.
+        * Exemplo: div p { color: red; } aplica a cor vermelha a todos os parágrafos que estão dentro
+          de um <div>.
+        * Exemplo: #lista-01 li { color: green; } aplica a cor verde a todos os elementos <li> que 
+          estejam dentro do elemento de id 'lista-01'.
+        * Exemplo: section div p { color: red; }  aplica a cor vermelha a todos os parágrafos <p> que
+          estão dentro de um <div>, que, por sua vez, está dentro de um <section>.
+        * Exemplo: .minha-classe #meu-id li { color: black; } aplica a cor preta aos elementos <li> 
+          que estão dentro de um elemento com o ID 'meu-id', que por sua vez está dentro de um 
+          elemento com a classe 'minha-classe'.
+
+    
+        * Seletor Filho: Seleciona elementos que são filhos diretos de outro elemento.
+        * Exemplo: div > p { color: green; } aplica a cor verde apenas aos parágrafos que são filhos
+          diretos de um <div>.
+        * Exemplo: .fundo-azul > p { background: lightblue; } aplica um fundo azul claro aos 
+          parágrafos que sejam filhos diretos dos elementos que possuem a classe CSS 'fundo-azul'.
+        * Exemplo: main > label > h3 { background: lightgreen; } aplica um fundo verde claro aos 
+          elementos <h3> que são filhos diretos de elementos <label>, os quais, por sua vez, são 
+          filhos diretos da tag <main>.
+    
+        * Seletor Irmão Adjacente: Seleciona elementos que são imediatamente adjacentes a outro.
+        * Exemplo: h1 + p { margin-top: 0; } remove a margem superior do parágrafo que vem 
+          diretamente após o encerramento de um <h1>.
+        * Exemplo: .fundo-verde + p { background:lightgreen; } aplica um fundo verde claro aos 
+          parágrafos que venham logo após os elementos com a classe CSS 'fundo-verde'.
+
+        * Seletor Irmão em Geral: Seleciona todos os elementos irmãos que vêm após um elemento 
+          específico, não necessariamente imediatamente adjacentes. "Irmãos" referem-se a elementos 
+          que estão no mesmo nível hierárquico dentro do mesmo contêiner pai.
+        * Exemplo: div ~ p { color: tomato; } aplica a cor tomato a todos os parágrafos que são 
+          irmãos e vêm após um elemento <div>, independentemente de outros elementos ou parágrafos 
+          entre eles. 
