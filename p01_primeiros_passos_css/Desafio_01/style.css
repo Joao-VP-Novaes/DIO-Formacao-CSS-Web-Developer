@@ -1,0 +1,5 @@
+@import url(./reset.css);
+
+.banner{
+    background-color: rgba(50, 50, 50, 0.4);
+}
