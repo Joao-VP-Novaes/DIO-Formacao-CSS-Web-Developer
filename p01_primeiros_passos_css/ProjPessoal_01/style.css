@@ -1,4 +1,5 @@
 @import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     background-color: rgba(255, 0, 0, 0.15);
@@ -10,7 +11,7 @@ body {
 #fundo-branco{
     background-color: white;
 
-    height: 50em;
+    height: auto;
     width: 90%;
     margin: 0 auto;
     margin-top: 10px;
@@ -53,11 +54,104 @@ span{
     border-radius: 10px;
 }
 
-#bem_vindo{
-    color: lightgreen;
-    background-color: blue;
+#intro{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
 
-    margin-top: 20px;
+#bem_vindo{
+    color: rgba(200, 0, 0, 0.7);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+    margin-bottom: 20px;
+
+    font-size: 64px;
+    font-family: "Courgette", sans-serif;
+}
+
+#msn_boas_vindas{
+    color: rgb(117, 21, 48);
+
+    width: 70%;
+    margin: auto;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+#opcoes{
+    margin: 80px 0px;
+    height: auto;
+    width: 100%;;
+
+    padding: 0px 200px;
+}
+
+.comidas{
+    background-color: rgba(252, 227, 234, 0.5);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+    border-radius: 2em;
+
+    width: 70%;
+    height: 360px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+h2{
+    color: rgba(200, 0, 0, 0.7);
+
+    font-size: 32px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     text-align: center;
 }
+
+.texto_direita{
+    width: 280px;
+    height: 240px;
+    margin-left: 550px;
+}
+
+.texto_direita > p{
+    color: rgb(117, 21, 48);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    text-align: justify;
+}
+
+.texto_direita > hr{
+    width: 60%; 
+    height: 2px; 
+    background-color: rgba(200, 0, 0, 0.7); 
+    border-width: 0px; border-radius: 20px;
+}
+
+.texto_esquerda{
+    width: 280px;
+    height: 240px;
+    margin-left: 120px;
+}
+
+.texto_esquerda > p{
+    color: rgb(117, 21, 48);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    text-align: justify;
+}
+
+.texto_esquerda > hr{
+    width: 90%; 
+    height: 2px; 
+    background-color: rgba(200, 0, 0, 0.7); 
+    border-width: 0px; border-radius: 20px;
+}
+
 
