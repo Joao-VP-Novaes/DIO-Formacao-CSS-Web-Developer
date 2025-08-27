@@ -85,7 +85,36 @@
         </main>
 
         <footer>
+            <p>Contate-nos!!</p>
 
+            <form>
+                <label for="name">Nome completo:</label>
+                <input type="text" id="name" required />
+                
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpd" />
+                <br />
+
+                <label for="cell">Telefone:</label>
+                <input id="cell" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+                <br />
+
+                <label for="about">Assunto:</label>
+                <input id="about" />
+                <br />
+
+                <label for="message" style="vertical-align:top;">Mensagem:</label>
+                <textarea id="message" rows="5" cols="50" placeholder="Escreva aqui." style="color: black;" required>
+                </textarea>
+                <br />
+
+                <div id="botao">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
         </footer>
     </div>
 </body>

@@ -46,7 +46,7 @@ body {
     text-align: right;
 }
 
-span{
+nav > span{
     background-color: rgba(200, 0, 0, 0.7);
     padding: 2px 20px;
     margin-left: 5px;
@@ -155,3 +155,58 @@ h2{
 }
 
 
+footer{
+    background-color: rgb(117, 21, 48);
+    border-top: 6px solid rgba(200, 0, 0, 0.7); 
+
+    height: 250px;
+    box-sizing: content-box;
+
+    padding-bottom: 120px;
+}
+
+footer > p{
+    color: rgb(252, 227, 234);
+    text-align: center;
+
+    font-size: 32px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+label{
+    color:rgb(252, 227, 234);
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-left: 50px;
+}
+
+input{
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+#botao{
+    text-align: center;
+    margin-top: 20px;
+}
+
+button{
+    padding: 5px 30px;
+
+    color:rgb(252, 227, 234);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: 3px solid;
+    border-radius: 4px;
+}
