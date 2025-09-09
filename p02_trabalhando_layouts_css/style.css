@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color:lightgreen
+}
+
+.row {
+  flex-direction: row; /* Itens lado a lado */
+}
+
+.column {
+  flex-direction: column; /* Itens em coluna */
+}
