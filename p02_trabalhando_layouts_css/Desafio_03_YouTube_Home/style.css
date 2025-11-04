@@ -1,0 +1,91 @@
+@import url(./reset.css);
+
+body{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr;
+}
+
+header{
+    display: grid;
+    grid-column: auto / span 2;
+    grid-template-columns: repeat(3, 1fr);
+
+    height: 4rem;
+}
+
+#menuPrincipal{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+}
+
+#menuBurguer{
+    grid-column-start: 2;
+    height: 2em;
+}
+
+#logoYT{
+    padding-left: 20px;
+    height: 1.6em;
+}
+
+#menuBuscar{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
+input{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    height: 2.5rem;
+    font-size: larger;
+    box-sizing: border-box;
+    padding-left: 20px;
+
+    border-radius: 20px 0% 0% 20px;
+    border: solid 1px #828282;
+}
+
+.busca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 2.5rem;
+    width: 4em;
+    background-color: #e5e5e5;
+    border: solid 1px #828282;
+
+    box-sizing: border-box;
+}
+
+.busca > img{
+    width: 1.6em;
+}
+
+#menuUsuario{
+    display: grid;
+    grid-template-columns: 60%  repeat(3, 1fr);
+    align-items: center;
+}
+
+#imgCamera{
+    height: 2.2em;
+    grid-column-start: 2;
+}
+
+#imgSino{
+    height: 2.2em;
+}
+
+#imgPerfil{
+    height: 2.2em;
+}
+
+aside{
+    display: grid;
+    background-color: red;
+}
