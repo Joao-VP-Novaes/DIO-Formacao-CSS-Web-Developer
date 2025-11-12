@@ -2,7 +2,7 @@
 
 body{
     display:grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 85%;
     grid-template-rows: auto 1fr;
      min-height: 100vh;
 }
@@ -95,7 +95,7 @@ aside{
 
 aside > nav{
     display: grid;
-    grid-template-columns: 15% 12% auto;
+    grid-template-columns: 15% 15% auto;
     grid-template-rows: auto;
     align-items: center;
 }
@@ -111,5 +111,59 @@ nav > p{
 }
 
 main{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-rows: 320px;
+    row-gap: 10px;
+
     background-color: #f5f5f5;
+    padding-top: 2rem;
+}
+
+.mainItem{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% auto;
+}
+
+.thumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb > img{
+    height: 90%;
+}
+
+.infoVideo{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 0.8em;
+    grid-template-rows: 55% 1fr;
+
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5px;
+}
+
+.logoDIO{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.titulo{
+    grid-column-start: 2;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.infos{
+    grid-column-start: 2;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 80%);
 }
