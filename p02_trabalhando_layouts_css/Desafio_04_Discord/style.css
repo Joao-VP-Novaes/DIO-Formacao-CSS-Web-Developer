@@ -2,26 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-body{
+body {
     display: flex;
     flex-flow: column wrap;
-    align-items:stretch;
+    align-items: stretch;
 
     background-color: white;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     body {
-        display:grid;
-        grid-template-rows: repeat(5, auto);
-        grid-template-columns: 1fr repeat(2, minmax(auto, 1200px)) 1fr;
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: auto;
         grid-auto-flow: column;
-
-        background-color: lightblue;
     }
 }
 
-.acesso{
+.acesso {
     display: flex;
     flex-flow: column wrap;
     flex: 1 1 100%;
@@ -39,13 +37,13 @@ body{
     background-size: cover;
 }
 
-@media (min-width: 768px){
-    .acesso{
+@media (min-width: 768px) {
+    .acesso {
         display: flex;
         flex-flow: column nowrap;
         align-items: right;
 
-        grid-column: 1 / span 4;
+        grid-column: 1 / span 1;
         padding-top: 3em;
 
         padding-bottom: 3em;
@@ -55,7 +53,7 @@ body{
     }
 }
 
-#textoInit{
+#textoInit {
     font-family: "Luckiest Guy";
     font-size: 2rem;
     color: white;
@@ -64,9 +62,9 @@ body{
     margin-bottom: 1em;
 }
 
-@media (min-width: 768px){
-    #textoInit{
-        font-family:"Luckiest Guy";
+@media (min-width: 768px) {
+    #textoInit {
+        font-family: "Luckiest Guy";
         font-size: 2.5rem;
         color: white;
         align-self: center;
@@ -76,15 +74,15 @@ body{
     }
 }
 
-#textoComp{
+#textoComp {
     font-family: "Open Sans";
     color: white;
 
     margin-bottom: 1.8rem;
 }
 
-@media (min-width: 768px){
-    #textoComp{
+@media (min-width: 768px) {
+    #textoComp {
         font-family: "Open Sans";
         color: white;
         width: 70%;
@@ -93,8 +91,8 @@ body{
     }
 }
 
-@media (min-width: 768px){
-    .botoes{
+@media (min-width: 768px) {
+    .botoes {
         display: flex;
         flex-flow: row nowrap;
         column-gap: 1rem;
@@ -108,7 +106,7 @@ body{
     }
 }
 
-.botao{
+.botao {
     width: 100%;
     box-sizing: border-box;
 
@@ -122,8 +120,8 @@ body{
     padding-bottom: 0.5rem;
 }
 
-@media (min-width: 768px){
-    .botao{
+@media (min-width: 768px) {
+    .botao {
         width: auto;
         box-sizing: border-box;
 
@@ -137,31 +135,23 @@ body{
     }
 }
 
-.botaoBranco{
+.botaoBranco {
     margin-bottom: 1rem;
     color: black;
 }
 
-@media (min-width: 768px){
-    .botaoBranco{
+@media (min-width: 768px) {
+    .botaoBranco {
         margin-bottom: 0;
-        color: black;
     }
 }
 
-.botaoPreto{
+.botaoPreto {
     background-color: #23272A;
     color: white;
 }
 
-@media (min-width: 768px){
-    .botaoPreto{
-        background-color: #23272A;
-        color: white;
-    }
-}
-
-.descBranco{
+.descBranco {
     display: flex;
     flex-flow: column wrap;
     flex: 1 1 100%;
@@ -172,36 +162,59 @@ body{
     padding-right: 1em;
 }
 
-@media (min-width: 768px){
-    .descBranco{
-        display: none;
+@media (min-width: 768px) {
+    .descBranco {
+        display: grid;
+        grid-template-columns: 1fr 10fr 6fr 1fr;
+
+        grid-column: 1 / span 1;
+
+        background-color: white;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
-.imgMobile{
+@media (min-width: 768px) {
+    .textoDiv {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        row-gap: 1rem;
+
+        align-self: stretch;
+    }
+}
+
+.imgMobile {
     width: 100%;
     margin-top: 2em;
     margin-bottom: 2rem;
 }
 
-@media (min-width: 768px){
-    .imgMobile{
-        display: none;
+@media (min-width: 768px) {
+    .imgMobile {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        grid-column: 2 / 3;
     }
 }
 
-.imgMobileFim{
+.imgMobileFim {
     width: 100%;
     margin-bottom: 2rem;
 }
 
-@media (min-width: 768px){
-    .imgMobileFim{
-        display: none;
+@media (min-width: 768px) {
+    .imgMobileFim {
+        margin-bottom: 0;
     }
 }
 
-h2{
+h2 {
     font-size: 24px;
     font-weight: 800;
     font-family: "Open Sans";
@@ -210,13 +223,19 @@ h2{
     align-self: start;
 }
 
-@media (min-width: 768px){
-    h2{
-        display: none;
+@media (min-width: 768px) {
+    h2 {
+        font-size: 26px;
+        font-weight: 800;
+        font-family: "Open Sans";
+        margin-bottom: 0;
+
+        text-align: left;
+        line-height: 1.4;
     }
 }
 
-.textoSimples{
+.textoSimples {
     font-size: 1rem;
     font-family: "Open Sans";
     font-weight: 400;
@@ -224,13 +243,17 @@ h2{
     margin-bottom: 2rem;
 }
 
-@media (min-width: 768px){
-    .textoSimples{
-        display: none;
+@media (min-width: 768px) {
+    .textoSimples {
+        font-size: 1rem;
+        font-family: "Open Sans";
+        font-weight: 400;
+
+        margin-bottom: 0;
     }
 }
 
-.descCinza{
+.descCinza {
     display: flex;
     flex-flow: column wrap;
     flex: 1 1 100%;
@@ -241,14 +264,33 @@ h2{
     padding-right: 1em;
 }
 
-@media (min-width: 768px){
-    .descCinza{
-        display: none;
-        background-color: blue;
+@media (min-width: 768px) {
+    .descCinza {
+        display: grid;
+        grid-template-columns: 1fr 6fr 10fr 1fr;
+        grid-auto-flow: row;
+
+        grid-column: 1 / span 1;
+
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
-.textoFim{
+@media (min-width: 768px) {
+    .descCinza>.textoDiv {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .descCinza>.imgMobile {
+        grid-column: 3 / 4;
+    }
+}
+
+.textoFim {
     font-family: "Luckiest Guy";
     font-size: 2rem;
     color: #23272A;
@@ -258,13 +300,37 @@ h2{
     margin-top: 1.2em;
 }
 
-@media (min-width: 768px){
-    .textoFim{
-        display: none;
+
+
+@media (min-width: 768px) {
+    .descCinza.fim {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 1.4rem;
+    }
+
+    .textoFim {
+        font-family: "Luckiest Guy";
+        font-size: 2rem;
+        color: #23272A;
+        align-self: center;
+        text-align: center;
+
+        margin-bottom: 0.6em;
+        margin-top: 0;
+    }
+
+    .fim > .textoSimples{
+        text-align: center;
+        margin-bottom: 0;
     }
 }
 
-.fundo{
+.fundo {
     display: flex;
     flex-flow: column wrap;
 
@@ -277,19 +343,22 @@ h2{
     padding-top: 2rem;
 }
 
-@media (min-width: 768px){
-    .fundo{
-        display: none;
+@media (min-width: 768px) {
+    .fundo {
+        display: flex;
+        flex-flow: column wrap;
+
+        align-items: center;
+        justify-content: center;
+
+        background-color: #23272A;
+
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
     }
 }
 
-#logoDisc{
+#logoDisc {
     max-width: 40%;
     height: auto;
-}
-
-@media (min-width: 768px){
-    #logoDisc{
-        display: none;
-    }
 }
