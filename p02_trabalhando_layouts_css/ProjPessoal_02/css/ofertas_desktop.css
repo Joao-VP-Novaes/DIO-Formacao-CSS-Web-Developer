@@ -1,0 +1,250 @@
+@import url("../../reset.css");
+
+body{
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: rgba(161, 161, 161, 0.2);
+    padding-top: 30px;
+}
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+
+    padding: 10px 8%;
+    width: auto;
+}
+
+header > img{
+    width: 2rem;
+    margin-left: 2%;
+}
+
+#ShopLogo{
+    justify-self: left;
+    margin-right: auto;
+}
+
+.inAppNav{
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 1rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#actalPage{
+    color: rgb(70, 70, 70);
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.banner{
+    text-align: center;
+
+    width: 100%;
+    height: auto;
+    padding: 1em 0;
+    
+}
+
+.banner > img{
+    width: 85%;
+    height: 20vw;
+
+    object-fit:cover;
+    border-radius: 1rem;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(37, 37, 37);
+
+    align-self: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+
+    grid-auto-rows: minmax(2rem, auto);
+    row-gap: 1rem;
+    
+    grid-template-areas: "ofertas ." "celula1 celula2" "celula3 celula4";
+
+    padding: 0 8vw;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 38% auto;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    column-gap: 0.5em;
+    align-items: center;
+    grid-template-areas:
+        "col1 area1"
+        "col1 area2"
+        "col1 area3"
+        "col1 area4";
+
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+article>img {
+    grid-area: col1;
+    width: 100%;
+}
+
+#oferta1{
+    grid-area: celula1;
+}
+
+#oferta2{
+    grid-area: celula2;
+}
+
+#oferta3{
+    grid-area: celula3;
+}
+
+#oferta4{
+    grid-area: celula4;
+}
+
+.nomeProduto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 0.4em;
+}
+
+.precoAntigo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    color: gray;
+}
+
+.precoAntigo>span{
+    text-decoration: line-through;
+}
+
+.precoNovo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: 0.2rem;
+}
+
+.precoNovo>span{
+    color: rgb(30, 150, 0);
+}
+
+button{
+    width: 90%;
+    padding: 0.3rem 0;
+    border-radius: 5px;
+    border: none;
+
+    color: rgb(236, 236, 236);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(31, 44, 83);
+}
+
+footer{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:space-around;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+ul{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-self: center;
+    justify-content: space-around;
+    column-gap: 1rem;
+}
+
+.mainNav{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.2em;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.navImg{
+    width: auto;
+    height: 1.8rem;
+}
+
+.outrasInfos{
+    display: inline-grid;
+    grid-template-columns: 6fr 5fr 6fr;
+    grid-template-rows: 1.4em 1.4em 1.4em;
+    column-gap: 8px;
+    row-gap: 10px;
+
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logoLinks{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.socialMediaLinks>img{
+    width: 2rem;
+    margin-right: 10px;
+}
+
+.mobileOnly{
+    display: none;
+}

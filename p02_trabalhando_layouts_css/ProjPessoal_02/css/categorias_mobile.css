@@ -1,0 +1,149 @@
+@import url("../../reset.css");
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: whitesmoke;
+    padding-top: 30px;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+
+    background-color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+
+    padding: 10px 20px;
+    width: auto;
+}
+
+header>img {
+    width: 2.4rem;
+    margin-left: 4%;
+}
+
+#ShopLogo {
+    justify-self: left;
+    margin-right: auto;
+}
+
+.inAppNav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.9);
+
+    padding: 14px 0;
+    border-bottom: rgba(0, 0, 0, 0.2) 2px solid;
+}
+
+#actalPage {
+    color: rgb(70, 70, 70);
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 2px;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 1rem;
+
+    padding: 1em 5% 2em;
+    background-color: rgb(238, 238, 238);
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(37, 37, 37);
+
+    align-self: start;
+    margin-bottom: 0.5rem;
+}
+
+.categoria {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+    width: 100%;
+
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.categoria>img {
+    width: 40%;
+    height: auto;
+}
+
+.nomeCategoria {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+
+    margin-left: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    justify-content: space-around;
+
+    background-color: white;
+    padding-top: 0.6em;
+    padding-bottom: 1em;
+
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.mainNav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.2em;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.navImg {
+    width: auto;
+    height: 2rem;
+}
+
+.pcOnly{
+    display: none;
+}
