@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HBO Max</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="./assets/images/hbo-logo.svg" alt="HBO Logo">
+        <a href="#">
+            <img src="./assets/images/hbo-logo.svg" alt="HBO Logo">
+        </a>
 
         <nav>
-            <button class="nav__botao">ENTRAR</button>
-            <button class="nav__botao nav__botao--fundo">ASSINE AGORA</button>
+            <a class="nav__botao" href="login.html" target="_self">ENTRAR</a>
+            <a href="#sectionPlanos" class="nav__botao nav__botao--fundo">ASSINE AGORA</a>
         </nav>
     </header>
 
@@ -34,10 +36,123 @@
             <p class="intro__textoSimples">Assinaturas a partir de</p>
             <p class="intro_infoPreco"><span class="intro__preco">R$14,15</span> <span class="intro__microTexto">/mês*</span></p>
 
-            <button class="intro__botaoAnimado">ASSINE AGORA</button>
-
+            <a href="#sectionPlanos">
+                <button class="intro__botaoAnimado">ASSINE AGORA</button>
+            </a>
+            
             <p class="intro__microTexto">*aplicável ao plano anual com o<br>pagamento antecipado.</p>
         </section>
+
+        <section id="sectionPlanos" class="planos">
+            <div class="planos__content">
+                <h3>Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h3>
+
+                <div class="planos__cards">
+                    <div id="leftCard" class="card">
+                        <p class="cards__titulo">Mobile</p>
+                        <p class="cards__preco">R$ 19,90 <span>/mês</span></p>
+
+                        <ul class="cards__info">
+                            <li>
+                                Aproveite em smartphones e tablets, onde quiser.
+                            </li>
+                            <li>
+                                Assista em 1 tela por vez.
+                            </li>
+                            <li>
+                                Tenha conteúdo em resolução adaptada para cada dispositivo.
+                            </li>
+                            <li>
+                                Baixe suas séries e filmes favoritos, assista onde e quando quiser.
+                            </li>
+                        </ul>
+
+                        <button class="cards__botao">escolher o plano mobile</button>
+                    </div>
+
+                    <div id="rightCard" class="card">
+                        <p class="cards__titulo">Multitelas</p>
+                        <p class="cards__preco">R$ 27,90 <span>/mês</span></p>
+
+                        <ul class="cards__info">
+                            <li>
+                                Aproveite em todos os seus dispositivos.
+                            </li>
+                            <li>
+                                Chromecast e AirPlay disponíveis.
+                            </li>
+                            <li>
+                                Assista em até 3 telas ao mesmo tempo.
+                            </li>
+                            <li>
+                                Tenha conteúdo em alta definição, com qualidade 4K.
+                            </li>
+                            <li>
+                                Baixe suas séries e filmes favoritos, assista onde e quando quiser.
+                            </li>
+                            <li>
+                                Crie até 5 perfis diferentes.
+                            </li>
+                        </ul>
+
+                        <button class="cards__botao">escolher o plano multitelas</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="canais">
+            <h3>Descubra novos universos</h3>
+
+            <div class="canais__conteudo">
+                <div class="canais__card canais__card--hbo">
+                </div>
+
+                <div class="canais__card canais__card--max">
+                </div>
+
+                <div class="canais__card canais__card--dc">
+                </div>
+
+                <div class="canais__card canais__card--warner">
+                </div>
+
+                <div class="canais__card canais__card--cartoon">
+                </div>
+
+                <div class="canais__card canais__card--ucl">
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <section class="footer__links">
+            <a href="#">AGORA NA HBO MAX</a>
+            <a href="#">EM BREVE</a>
+            <a href="#">FILME EM DESTAQUE</a>
+            <a href="#">SÉRIES</a>
+            <a href="#">AJUDA</a>
+        </section>
+
+        <small>
+            © 2022 WarnerMedia. Direct Latin America, LLC. Todos os direitos reservados. HBO Max é usado sob licença.
+        </small>
+
+        <section class="footer__redes">
+            <a href="https://www.facebook.com/HBOMaxBrasil/?locale=pt_BR" target="_blank">
+                <img src="./assets/images/fb_0.png" alt="link do Facebook da HBO Max">
+            </a>
+            <a href="https://x.com/StreamMaxBR" target="_blank">
+                <img src="./assets/images/twitter_0.png" alt="link do Twitter da HBO Max">
+            </a>
+            <a href="https://www.instagram.com/hbomaxbrasil/" target="_blank">
+                <img src="./assets/images/instagram_0.png" alt="link do Instagram da HBO Max">
+            </a>
+            <a href="https://www.youtube.com/@hbomax" target="_blank">
+                <img src="./assets/images/youtube_0.png" alt="link do YouTube da HBO Max">
+            </a>
+        </section>
+    </footer>
 </body>
 </html>

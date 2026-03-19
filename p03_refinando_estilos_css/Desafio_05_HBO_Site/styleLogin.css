@@ -1,0 +1,402 @@
+/* Fontes Raleway e Quicksand */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+@import url(../reset.css);
+
+/* Variáveis de cores */
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(45deg,
+            #9b34ef 0%,
+            #490cb0 20%,
+            transparent 50%);
+    --new-btn-bg-color-gradient: linear-gradient(45deg,
+            #9b34ef 0%,
+            #5516ba 45%,
+            #490cb0 55%);   
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(90deg,
+            #5516ba,
+            rgba(255, 0, 229, 0.5) 80%);
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    --fontRaleway: 'Raleway', sans-serif;
+    --fontQuicksand: 'Quicksand', sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+/* Custom Scroll */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+body{
+    background-color: var(--primary-color);
+    min-height: 100vh;
+}
+
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: var(--nav-bg-color);
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 1rem;
+        position: fixed;
+
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+header img{
+    height: 2rem;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    header img{
+        height: 1.2rem;
+    }
+}
+
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+}
+
+.nav__botao {
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__botao{
+        font-size: 1rem;
+    }
+}
+
+.nav__botao--fundo {
+    background-color: var(--tertiary-color);
+    border-radius: 20px;
+
+    padding: 6px 20px;
+    transition: 0.5s ease;
+}
+
+.nav__botao--fundo:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    height: 70vh;
+    padding: 4rem 0;
+    box-sizing: border-box;
+
+    color: white;
+    background-image: url(./assets/images/background-movies-series.png);
+    background-size: cover;
+    background-position: right;
+}
+
+@media screen and (max-width: 1024px){
+    main{
+        padding: 6rem 0 2rem;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 480px){
+    main{
+        min-height: 75vh;
+        padding: 6rem 0 0.8rem;
+        box-sizing: border-box;
+    }
+}
+
+main::before{
+    content:'';
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(to bottom, transparent 70%, #020228);
+}
+
+.containerForm{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+
+    padding: 1.4rem 1.2rem;
+    z-index: 2;
+    min-width: 50%;
+    max-width: 60%;
+    max-height: 90%;
+    box-sizing: border-box;
+
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .containerForm{
+        padding: 0.8rem 1.2rem;
+        min-width: 60%;
+        max-width: 90%;
+        max-height: 100%;
+        box-sizing: content-box;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .containerForm{
+        padding: 1rem 1rem;
+        min-width: 80%;
+        max-width: 90%;
+        max-height: 100%;
+        box-sizing: border-box;
+    }
+}
+
+h4{
+    font-family: var(--fontRaleway);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    align-self: center;
+    margin-bottom: 1.8rem;
+}
+
+.containerForm p{
+    font-family: var(--fontQuicksand);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+
+    margin-bottom: 1.4rem;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    gap: 1rem;
+    position: relative;
+}
+
+input[type="email"],
+input[type="password"]{
+    background-color: var(--form-field-bg-color);
+    border: var(--form-field-border);
+    border-radius: 5px;
+    border-width: 2px;
+    color: var(--text-color);
+
+    padding: 1rem;
+}
+
+input:invalid:not(:placeholder-shown){
+    border-color: var(--form-field-error);
+}
+
+input[type="password"]{
+    margin-bottom: 1.4rem;
+}
+
+input::placeholder{
+    color: var(--form-field-placeholder);
+}
+
+@media screen and (max-width: 480px){
+    .form__containerBotoes{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: start;
+        gap: 10px;
+    }
+}
+
+.form__botao{
+    background-image: var(--new-btn-bg-color-gradient);
+    background-color: var(--tertiary-color);
+    border: solid 2px transparent;
+    border-radius: 20px;
+    background-clip: padding-box;
+    color: white;
+    font-family: var(--fontRaleway);
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    padding: 10px 20px;
+    box-sizing: border-box;
+     
+    transform: scale(1);
+    transform-origin:center;
+
+    transition: background-image 0.5s ease, border 0.2s ease, background-color 0.5s ease-out, transform 0.3s ease;
+}
+
+.form__botao:hover:not(.form__botao--senha){
+    background-image: none;
+    background-color: transparent;
+    border: solid 2px var(--secondary-color);
+    color: white;
+
+    transform: scale(1.05);
+}
+
+.form__botao--senha{
+    background: none;
+    color: var(--link-color);
+}
+
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer__links{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+
+    margin-bottom: 0.9rem;
+}
+
+@media screen and (max-width: 480px){
+    .footer__links{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.4rem;
+
+        margin-bottom: 0.5rem;
+    }
+}
+
+.footer__links a{
+    font-family: var(--fontRaleway);
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--link-color);
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    transition: color 0.5s ease;
+}
+
+@media screen and (max-width: 480px){
+    .footer__links a{
+        font-size: 0.7rem;
+    }
+}
+
+.footer__links a:hover{
+    color: white;
+}
+
+small{
+    font-size: x-small;
+    font-family: var(--fontQuicksand);
+    color: var(--link-color);
+    font-weight: 500;
+
+    margin-bottom: 3.6rem;
+}
+
+@media screen and (max-width: 768px){
+    small{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.footer__redes{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
