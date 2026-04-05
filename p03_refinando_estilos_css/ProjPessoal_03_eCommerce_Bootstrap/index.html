@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Nutrition</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="assets/imgs/Logo_icon.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" href="#">
+                <img src="./assets/imgs/Logo_icon.png" alt="Logo" id="logoImg" class="d-inline-block align-text-top">
+                Iron Nutrition
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Página Inicial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Suporte
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Carrinho
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/imgs/profile.png" alt="Perfil" id="profileImg">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Entrar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Fazer registro</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="infoProduto">
+            <div class="carouselContainer">
+                <div id="carouselItem" class="carousel slide carousel-dark">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselItem" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselItem" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselItem" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselItem" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselItem" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/imgs/produto/creatina_01.webp" class="d-block w-100" alt="imagem produto 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/imgs/produto/creatina_02.webp" class="d-block w-100" alt="imagem produto 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/imgs/produto/creatina_03.webp" class="d-block w-100" alt="imagem produto 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/imgs/produto/creatina_04.webp" class="d-block w-100" alt="imagem produto 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/imgs/produto/creatina_05.webp" class="d-block w-100" alt="imagem produto 5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselItem" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselItem" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    
+            <h3 class="tituloProduto text-wrap fs-5 mb-4">
+                Kit 2und Creatinas DUX NUTRITION 100% PURA Monohidratada – Zero Glúten Original | Alta Performance na
+                Academia
+            </h3>
+    
+            <div class="precoProduto">
+                <span class="precoAtual fs-4 fw-bold">R$79,90</span>
+    
+                <del class="precoAntigo fs-6 fw-light">R$129,90</del>
+    
+                <span class="badge rounded-pill text-bg-success">-39%</span>
+            </div>
+    
+            <div class="descProduto mt-2">
+                <table class="tabelaInfo">
+                    <tr>
+                        <td class="linha fw-bold">Marca:</td>
+                        <td class="linha fw-semibold">DUX NUTRITION</td>
+                    </tr>
+                    <tr>
+                        <td class="linha fw-bold">Sabor:</td>
+                        <td class="linha fw-semibold">Original</td>
+                    </tr>
+                    <tr>
+                        <td class="linha fw-bold">Tipo de Creatina:</td>
+                        <td class="linha fw-semibold">Monohidratada</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">Conteúdo da Embalagem:</td>
+                        <td class="fw-semibold">2 unidades de 300g cada</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <button type="button" class="botaoCarrinho btn btn-lg fw-semibold mt-3">Adicionar ao carrinho |
+                &#x2B07;</button>
+        </section>
+    
+        <section id="infoVendedor">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/imgs/vendedor_profile.png" class="imagemVendedor img-fluid rounded-start"
+                            alt="imagem do vendedor">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Panda Products</h5>
+                            <p class="card-text">
+                                Vendedor confiável com excelente atendimento ao cliente. Consagrado no mercado de
+                                suplementos
+                                e produtos fitness, oferecendo uma ampla variedade de opções para atender às necessidades
+                                dos
+                                consumidores. A Panda Products é reconhecida por sua qualidade e compromisso com a
+                                satisfação do cliente.
+                            </p>
+                            <p class="card-text fw-semibold">Avaliação: 4.8/5 &#x2B50;</p>
+                            <p class="card-text"><small class="text-body-secondary">Atualizado há 3 meses.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <table class="tabelaVendedor">
+                <tr>
+                    <td>Avaliações:</td>
+                    <td>514</td>
+                </tr>
+                <tr>
+                    <td>Produtos:</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Localização:</td>
+                    <td>São Paulo, SP</td>
+                </tr>
+                <tr>
+                    <td>Tempo de Mercado:</td>
+                    <td>5 anos</td>
+                </tr>
+                <tr>
+                    <td>Número de Vendas:</td>
+                    <td>10.000+</td>
+                </tr>
+                <tr>
+                    <td>Seguidores:</td>
+                    <td>96</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="avaliacoesProduto">
+            <h2>Avaliações dos Clientes</h2>
+            <hr class="rateLine">
+        
+            <div class="containerComentarios">
+                <article class="card cardComentarios mb-3" style="width: auto;">
+                    <div class="card-header">
+                        <div class="clientProfile">
+                            <img class="clientProfilePic" src="./assets/imgs/clientProfilePic.png" alt="perfil do cliente">
+                            <p>Ana letícia</p>
+                        </div>
+                        <p>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title darkText">Excelente qualidade!</h5>
+                        <p class="card-text">Mal posso expressar o quão satisfeito estou com a qualidade do produto. Recomendo
+                            para todos!</p>
+                    </div>
+                </article>
+        
+                <article class="card cardComentarios mb-3" style="width: auto;">
+                    <div class="card-header">
+                        <div class="clientProfile">
+                            <img class="clientProfilePic" src="./assets/imgs/clientProfilePic.png" alt="perfil do cliente">
+                            <p>João Paulo</p>
+                        </div>
+                        <p>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title darkText">Muito bom!</h5>
+                        <p class="card-text">A embalagem veio um pouco danificada, mas o produto em si é excelente.</p>
+                    </div>
+                </article>
+        
+                <article class="card cardComentarios mb-3" style="width: auto;">
+                    <div class="card-header">
+                        <div class="clientProfile">
+                            <img class="clientProfilePic" src="./assets/imgs/clientProfilePic.png" alt="perfil do cliente">
+                            <p>Glauber Braga</p>
+                        </div>
+                        <p>&#x2B50;&#x2B50;&#x2B50;</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title darkText">Já vi melhores</h5>
+                        <p class="card-text">O produto é bom, mas não é o melhor que já vi. Pelo preço compensa pra quem está 
+                            em busca de uma boa relação custo-benefício, mas não esperem muito.</p>
+                    </div>
+                </article>
+        
+                <article class="card cardComentarios mb-3" style="width: auto;">
+                    <div class="card-header">
+                        <div class="clientProfile">
+                            <img class="clientProfilePic" src="./assets/imgs/clientProfilePic.png" alt="perfil do cliente">
+                            <p>Sandra Lopes</p>
+                        </div>
+                        <p>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title darkText">Eu gostei</h5>
+                        <p class="card-text">O gosto é meio amargo, mas é mais questão de preferência pessoal. Produto de boa qualidade.</p>
+                    </div>
+                </article>
+
+                <article class="card cardComentarios mb-3" style="width: auto;">
+                    <div class="card-header">
+                        <div class="clientProfile">
+                            <img class="clientProfilePic" src="./assets/imgs/clientProfilePic.png" alt="perfil do cliente">
+                            <p>Gustavo Guimarães</p>
+                        </div>
+                        <p>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title darkText">Ótimo produto</h5>
+                        <p class="card-text">Comprei para experimentar e gostei bastante. A qualidade é muito boa e pelo preço compensa bastante!
+                            Única crítica que eu faria é que a embalagem poderia ser um pouco mais resistente, mas fora isso, tudo ótimo!
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card cardComentarios mb-3" style="width: auto;">
+                    <div class="card-header">
+                        <div class="clientProfile">
+                            <img class="clientProfilePic" src="./assets/imgs/clientProfilePic.png" alt="perfil do cliente">
+                            <p>Guilherme Albino</p>
+                        </div>
+                        <p>&#x2B50;&#x2B50;</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title darkText">Insatisfeito</h5>
+                        <p class="card-text">O produto chegou com um cheiro estranho e não gostei do sabor. Já havia experimentado produtos similares
+                            por preço parecido e não tive esse problema, então acredito que tenha sido um lote com algum defeito. De qualquer forma, 
+                            não pretendo comprar novamente.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card cardComentarios mb-3" style="width: auto;">
+                    <div class="card-header">
+                        <div class="clientProfile">
+                            <img class="clientProfilePic" src="./assets/imgs/clientProfilePic.png" alt="perfil do cliente">
+                            <p>Pedro Páscoa</p>
+                        </div>
+                        <p>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title darkText">Satisfatório</h5>
+                        <p class="card-text">O produto atendeu às minhas expectativas, mas não me impressionou. A qualidade é boa, mas o sabor não é dos melhores que já experimentei. 
+                            Pelo preço, acho que vale a pena para quem está procurando uma opção mais acessível.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card cardComentarios mb-3" style="width: auto;">
+                    <div class="card-header">
+                        <div class="clientProfile">
+                            <img class="clientProfilePic" src="./assets/imgs/clientProfilePic.png" alt="perfil do cliente">
+                            <p>Lázaro Campos</p>
+                        </div>
+                        <p>&#x2B50;</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title darkText">Produto de má qualidade</h5>
+                        <p class="card-text">Realmente não estava esperando um produto de tão baixa qualidade. O sabor é horrível e o produto 
+                            tem um cheiro estranho. Não recomendo para ninguém, a menos que estejam procurando por algo que seja realmente ruim.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card cardComentarios mb-3" style="width: auto;">
+                    <div class="card-header">
+                        <div class="clientProfile">
+                            <img class="clientProfilePic" src="./assets/imgs/clientProfilePic.png" alt="perfil do cliente">
+                            <p>Zeca Carioca</p>
+                        </div>
+                        <p>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title darkText">Me ajudou bastante!</h5>
+                        <p class="card-text">Após começar a usar o produto, notei uma melhora significativa no meu desempenho durante os treinos.
+                            A qualidade é excelente e o preço é justo. Recomendo para quem está buscando um suplemento de qualidade.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card cardComentarios mb-3" style="width: auto;">
+                    <div class="card-header">
+                        <div class="clientProfile">
+                            <img class="clientProfilePic" src="./assets/imgs/clientProfilePic.png" alt="perfil do cliente">
+                            <p>Mário Cunha</p>
+                        </div>
+                        <p>&#x2B50;&#x2B50;&#x2B50;&#x2B50;</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title darkText">Excelente produto!</h5>
+                        <p class="card-text">Comprei para experimentar e fiquei muito satisfeito. A qualidade é excelente e o preço é justo. O produto 
+                            atendeu às minhas expectativas e recomendo para quem está procurando um suplemento de qualidade.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="produtosSimilares">
+            <h2>Você também pode se interessar ✔️</h2>
+
+            <div class="containerSimilares">
+                <div class="card cardSimilares">
+                    <img src="./assets/imgs/outros_produtos/creatina_01.jpg" class="card-img-top" alt="produto similar 1">
+                    <div class="card-bodyFlex">
+                        <h5 class="card-title darkText">Creatina Monohidratada Pura 1kg, 500g, 300g e 150g - Dark Lab</h5>
+                        <p class="card-text">R$ 89,90</p>
+                        <a href="#" class="btn botaoBaixo">Ver produto</a>
+                    </div>
+                </div>
+
+                <div class="card cardSimilares">
+                    <img src="./assets/imgs/outros_produtos/creatina_02.jpg" class="card-img-top" alt="produto similar 2">
+                    <div class="card-bodyFlex">
+                        <h5 class="card-title darkText">Creatina Monohidratada Black Skull Turbo 300g</h5>
+                        <p class="card-text">R$ 29,90</p>
+                        <a href="#" class="btn botaoBaixo">Ver produto</a>
+                    </div>
+                </div>
+
+                <div class="card cardSimilares">
+                    <img src="./assets/imgs/outros_produtos/creatina_03.webp" class="card-img-top" alt="produto similar 3">
+                    <div class="card-bodyFlex">
+                        <h5 class="card-title darkText">Creatina Monohidratada 1kg 100% Pura Importada Soldiers Nutrition</h5>
+                        <p class="card-text">R$ 59,87</p>
+                        <a href="#" class="btn botaoBaixo">Ver produto</a>
+                    </div>
+                </div>
+
+                <div class="card cardSimilares">
+                    <img src="./assets/imgs/outros_produtos/creatina_04.webp" class="card-img-top" alt="produto similar 4">
+                    <div class="card-bodyFlex">
+                        <h5 class="card-title darkText">Creatina Integralmédica Hardcore Pote 300g</h5>
+                        <p class="card-text">R$ 55,97</p>
+                        <a href="#" class="btn botaoBaixo">Ver produto</a>
+                    </div>
+                </div>
+
+                <div class="card cardSimilares">
+                    <img src="./assets/imgs/outros_produtos/creatina_05.webp" class="card-img-top" alt="produto similar 5">
+                    <div class="card-bodyFlex">
+                        <h5 class="card-title darkText">Creatina Creafort 300g da vitafor</h5>
+                        <p class="card-text">R$ 28,74</p>
+                        <a href="#" class="btn botaoBaixo">Ver produto</a>
+                    </div>
+                </div>
+
+                <div class="card cardSimilares">
+                    <img src="./assets/imgs/outros_produtos/creatina_06.jpg" class="card-img-top" alt="produto similar 6">
+                    <div class="card-bodyFlex">
+                        <h5 class="card-title darkText">kit 1 Omegafor Plus 1000mg 120 cápsulas e 1 Creatina Creafort 300g</h5>
+                        <p class="card-text">R$ 88,52</p>
+                        <a href="#" class="btn botaoBaixo">Ver produto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row text-center">
+    
+                <div class="col-md-4">
+                    <h5 class="footer_titles">Sobre</h5>
+                    <p>Loja de suplementos para alta performance para atletas que buscam os melhores resultados para seus treinos.</p>
+                </div>
+    
+                <div class="col-md-4">
+                    <h5 class="footer_titles">Suporte</h5>
+                    <ul class="list-unstyled">
+                        <li>Contato</li>
+                        <li>Trocas</li>
+                        <li>Entrega</li>
+                        <li>Fale conosco</li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-4">
+                    <h5 class="footer_titles">Redes sociais</h5>
+                    <ul class="list-unstyled">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>WhatsApp</li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <hr class="bg-light">
+    
+            <div class="text-center">
+                © 2026 Iron Nutrition - Todos os direitos reservados.<br>Projeto pessoal desenvolvido durante a formação de CSS Web Developer da Digital Innovation One.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
