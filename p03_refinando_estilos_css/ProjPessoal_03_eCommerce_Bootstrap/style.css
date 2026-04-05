@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --deep-green: #01200f;
     --dark-green: #005826;
@@ -65,6 +67,12 @@
 #logoImg{
     width: 2rem;
     height: auto;
+}
+
+.logoName{
+    font-family: 'Saira Stencil', sans-serif;
+    color: var(--light-green);
+    font-weight: 600;
 }
 
 #profileImg{
