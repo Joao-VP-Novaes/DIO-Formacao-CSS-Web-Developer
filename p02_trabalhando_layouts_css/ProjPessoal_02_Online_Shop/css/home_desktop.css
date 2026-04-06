@@ -197,10 +197,11 @@ ul{
     column-gap: 8px;
     row-gap: 10px;
 
-    width: 100%;
+    width: auto;
     font-size: 0.9em;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0.8rem;
 }
 
 .logoLinks{
